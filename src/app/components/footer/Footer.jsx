@@ -1,9 +1,38 @@
+"use client";
+import { useRef, useState } from "react";
 import "./Footer.css";
 import Navbar from "../navbar/Navbar";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
+  const formRef = useRef();
+  const [done, setDone] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_rs6fa0k", "template_u2opf95", formRef.current, {
+        publicKey: process.env.NEXT_PUBLIC_KEY,
+      })
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+          formRef.current.reset();
+
+          setTimeout(() => {
+            setDone(false);
+          }, 2000);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="footer-container">
+    <div className="footer-container" id="contact">
       <div className="footer-content-container">
         <div className="footer-content">
           <h1>Contact</h1>
@@ -13,22 +42,23 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-form">
-          <form>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <div className="input-group">
-              <label htmlFor="name">NAME</label>
-              <input type="text" id="name" />
+              <label htmlFor="user_name">NAME</label>
+              <input type="text" name="user_name" />
             </div>
             <div className="input-group">
-              <label htmlFor="email">EMAIL</label>
-              <input type="email" id="email" />
+              <label htmlFor="user_email">EMAIL ADDRESS</label>
+              <input type="email" name="user_email" />
             </div>
             <div className="input-group">
               <label htmlFor="message">MESSAGE</label>
-              <textarea id="message" rows="4"></textarea>
+              <textarea name="message" rows="4"></textarea>
             </div>
             <button type="submit" className="contact-button">
               SEND MESSAGE
             </button>
+            {done && <p className="thanks">Thank you... will reply ASAP</p>}
           </form>
         </div>
       </div>

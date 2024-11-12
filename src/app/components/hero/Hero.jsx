@@ -66,6 +66,18 @@ const Hero = () => {
     animateStars();
   }, []);
 
+  //scroll contact form to view
+  const contactClick = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   return (
     <section className="hero">
       <canvas ref={canvasRef} className="starfield"></canvas>
@@ -80,7 +92,7 @@ const Hero = () => {
           Based in the UK, I&apos;m a front-end engineer passionate about
           building accessible web apps that users love.
         </p>
-        <button id="contact" className="contact-button">
+        <button className="contact-button" onClick={contactClick}>
           Contact Me
         </button>
       </div>

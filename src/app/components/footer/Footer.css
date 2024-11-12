@@ -79,6 +79,12 @@ hr {
   background-color: #a09b9b;
 }
 
+.thanks {
+  text-align: left;
+  margin-top: 15px;
+  color: #00ff9d;
+}
+
 @media (max-width: 820px) {
   .footer-content-container {
     display: block;
@@ -102,5 +108,9 @@ hr {
   .footer-content p {
     margin-bottom: 30px;
     font-size: 14px;
+  }
+
+  .thanks {
+    text-align: center;
   }
 }

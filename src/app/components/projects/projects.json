@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "image": "/images/linkshareapp.jpg",
+    "title": "Devlink",
+    "titleLong": "Devlink - Unified Developer Profile Hub",
+    "tools": ["HTML", "TailwindCSS", "Next", "Firebase"],
+    "githubLink": "https://github.com/damialade/devlink",
+    "webLink": "https://yourusername.github.io/project-one",
+    "description": "Devlink app is a cutting-edge web application designed to simplify and streamline the way developers showcase their online presence. This innovative platform allows developers to consolidate their various professional profiles and development-related links into a single, easily shareable URL.",
+    "screenshot1": "/images/linkshare1.png",
+    "screenshot2": "/images/linkshare2.jpg",
+    "screenshot3": "/images/linkshare3.jpg",
+    "extras": "You can register and login with your details"
+  },
+  {
+    "id": 2,
+    "image": "/images/designo.png",
+    "title": "Designo",
+    "titleLong": "Designo - Responsive Multi-Page Design Showcase",
+    "tools": ["HTML", "Sass", "Next"],
+    "githubLink": "https://github.com/damialade/designo",
+    "webLink": "https://yourusername.github.io/project-two",
+    "description": "Designo is a sophisticated multi-page website that serves as a compelling showcase of typography and design intuitiveness while demonstrating exceptional mobile responsiveness. The user interface is designed with a focus on intuitiveness, allowing visitors to navigate seamlessly between pages and sections. This is achieved through clear visual cues, consistent layout patterns, and strategically placed call-to-action elements ",
+    "screenshot1": "/images/designo1.jpg",
+    "screenshot2": "/images/designo2.png",
+    "screenshot3": "/images/designo3.jpg",
+    "extras": ""
+  },
+  {
+    "id": 3,
+    "image": "/images/carentweb.png",
+    "title": "Carent Web",
+    "titleLong": "Carent - Landing Page",
+    "tools": ["HTML", "React", "TailwindCSS"],
+    "githubLink": "https://github.com/damialade/carent-website",
+    "webLink": "https://yourusername.github.io/project-one",
+    "description": "This project involves the creation of a dynamic and visually appealing landing page designed for car rental companies. The landing page serves as an introduction to a SaaS (Software as a Service) platform that streamlines and enhances the management of car rental operations.",
+    "screenshot1": "/images/carentweb1.png",
+    "screenshot2": "/images/carentweb2.png",
+    "screenshot3": "/images/carentweb3.png",
+    "extras": ""
+  },
+  {
+    "id": 4,
+    "image": "/images/carentadmin.png",
+    "title": "Carent Admin",
+    "titleLong": "Carent - SaaS Platform for Car Rental Companies",
+    "tools": ["HTML", "TailwindCSS", "React", "Typescript"],
+    "githubLink": "https://github.com/damialade/carent-admin",
+    "webLink": "https://yourusername.github.io/project-two",
+    "description": "CarRent Pro is a comprehensive Software as a Service (SaaS) solution designed to revolutionize the operations of car rental companies. This web-based platform streamlines every aspect of car rental management, from inventory tracking to customer management, fleet management and reporting & analytics.",
+    "screenshot1": "/images/carentadmin1.png",
+    "screenshot2": "/images/carentadmin2.png",
+    "screenshot3": "/images/carentadmin3.png",
+    "extras": "Click on the login button to go to dashboard, no login details needed"
+  }
+]

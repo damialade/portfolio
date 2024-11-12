@@ -1,63 +1,55 @@
+"use client";
+import { useState } from "react";
 import "./Projects.css";
 import Image from "next/image";
 import Link from "next/link";
 import { CgMoreO } from "react-icons/cg";
 import { FaLink, FaGithub } from "react-icons/fa";
+import ProjectModal from "./ProjectModal";
 
-const projects = [
-  {
-    id: 1,
-    image: "/images/linkshareapp.jpg",
-    title: "Project One",
-    tools: ["React", "CSS"],
-    githubLink: "https://github.com/yourusername/project-one",
-    webLink: "https://yourusername.github.io/project-one",
-  },
-  {
-    id: 2,
-    image: "/images/designo.png",
-    title: "Project Two",
-    tools: ["HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/yourusername/project-two",
-    webLink: "https://yourusername.github.io/project-two",
-  },
-  {
-    id: 3,
-    image: "/images/carentweb.png",
-    title: "Project One",
-    tools: ["React", "CSS"],
-    githubLink: "https://github.com/yourusername/project-one",
-    webLink: "https://yourusername.github.io/project-one",
-  },
-  {
-    id: 4,
-    image: "/images/carentadmin.png",
-    title: "Project Two",
-    tools: ["HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/yourusername/project-two",
-    webLink: "https://yourusername.github.io/project-two",
-  },
-  // add more
-];
+const Projects = ({ projectsData }) => {
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
+  const [showModal, setShowModal] = useState(false);
 
-const Projects = () => {
+  const handleOpenModal = (projectId) => {
+    setSelectedProjectId(projectId);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedProjectId(null);
+  };
+
+  //scroll contact form to view
+  const contactClick = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   return (
     <div className="projects-container">
       <div className="title">
         <h1>Projects</h1>
-        <button id="contact" className="contact-button">
+        <button className="contact-button" onClick={contactClick}>
           Contact Me
         </button>
       </div>
 
       <div className="portfolio-grid">
-        {projects.map((project) => (
+        {projectsData.map((project) => (
           <div key={project.id} className="portfolio-card">
             <div className="image-container">
               <Image
                 src={project.image}
                 alt={project.title}
-                width={500}
+                width={300}
                 height={300}
                 className="project-image"
               />
@@ -67,7 +59,10 @@ const Projects = () => {
               <h3 className="project-title">{project.title}</h3>
               <p className="project-tools">{project.tools.join(", ")}</p>
               <div className="project-links">
-                <div className="link">
+                <div
+                  className="link"
+                  onClick={() => handleOpenModal(project.id)}
+                >
                   <CgMoreO size={"2em"} />
                 </div>
                 <div className="dev-link">
@@ -93,6 +88,15 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      {/* Modal */}
+      {showModal && (
+        <ProjectModal
+          projectId={selectedProjectId}
+          projectsData={projectsData}
+          show={showModal}
+          onClose={handleCloseModal}
+        />
+      )}
     </div>
   );
 };
