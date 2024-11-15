@@ -1,18 +1,21 @@
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 import "./Navbar.css";
 import Link from "next/link";
+import { TfiEmail } from "react-icons/tfi";
+import { TbFileCv } from "react-icons/tb";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">damialade</div>
+      <div className="navbar-logo">DamiAlade</div>
       <div className="navbar-icons">
         <Link
-          href="https://www.instagram.com/ti_annah/"
+          href="mailto:tiannah1989@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram />
+          <TfiEmail />
         </Link>
 
         <Link
@@ -20,7 +23,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FiGithub />
         </Link>
 
         <Link
@@ -28,7 +31,14 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedin />
+          <FaLinkedinIn />
+        </Link>
+        <Link
+          href="https://drive.google.com/file/d/1GkxdDDlYfoWdsHfKn6Ttuorqcu5kuYPN/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TbFileCv />
         </Link>
       </div>
     </nav>
