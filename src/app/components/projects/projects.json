@@ -54,5 +54,32 @@
     "screenshot2": "/images/carentadmin2.png",
     "screenshot3": "/images/carentadmin3.png",
     "extras": "Click on the login button to go to dashboard, no login details needed"
+  },
+  {
+    "id": 5,
+    "image": "/images/calculator.png",
+    "title": "Digit Wizard",
+    "titleLong": "Digit WIzard - A Simple Calculator App",
+    "tools": ["HTML", "CSS3", "Javascript"],
+    "githubLink": "https://github.com/damialade/calculator",
+    "webLink": "https://digitwizard.netlify.app",
+    "description": "",
+    "screenshot1": "",
+    "screenshot2": "",
+    "screenshot3": ""
+  },
+  {
+    "id": 6,
+    "image": "/images/ecommerce.png",
+    "title": "Tiannah",
+    "titleLong": "Tiannah - A One Stop Fashion Site for all Girlies",
+    "tools": ["HTML", "Styled-Component", "React", "Node", "Stripe-Checkout"],
+    "githubLink": "https://github.com/damialade/e-commerce",
+    "webLink": "https://e-commerce-damialade.vercel.app/",
+    "description": "This is an all-in-one e-commerce platform designed to enhance your online shopping experience. This user-friendly store allows you to browse a wide variety of products, easily add your favorite items to your wishlist, and quickly review your previous orders. With seamless navigation and a personalized shopping journey, Tiannah ensures a convenient and enjoyable way to shop anytime, anywhere.",
+    "screenshot1": "/images/ecommerce-screenshot1.png",
+    "screenshot2": "/images/ecommerce-screenshot2.png",
+    "screenshot3": "/images/ecommerce-screenshot3.png",
+    "extras": "Sign up and log in to begin shopping. You can browse products without needing to create an account."
   }
 ]
