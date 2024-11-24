@@ -75,7 +75,7 @@ h1 {
 
 .project-info {
   padding: 15px;
-  height: 14vw;
+  height: 50%;
   background: rgba(0, 255, 157, 0.1);
 }
 
@@ -106,6 +106,7 @@ h1 {
 
 .link:hover {
   color: #fff;
+  cursor: pointer;
 }
 
 .dev-link {

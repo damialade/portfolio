@@ -89,8 +89,9 @@ const Hero = () => {
           <span className="hero-span">Damilola Aladeokin.</span>
         </h1>
         <p className="hero-description">
-          Based in the UK, I&apos;m a front-end engineer passionate about
-          building accessible web apps that users love.
+          I&apos;m a front-end engineer based in the UK who is passionate about
+          building accessible and responsive web applications that are intuitive
+          to users.
         </p>
         <button className="contact-button" onClick={contactClick}>
           Contact Me
