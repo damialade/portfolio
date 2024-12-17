@@ -100,6 +100,9 @@ const ProjectModal = ({
                     <FaLink size={"2em"} />
                   </Link>
                 </div>
+                <div className="my-3 text-gray-800 leading-10">
+                  {selectedProject?.extras}
+                </div>
                 <div className="mt-4">
                   <button
                     type="button"

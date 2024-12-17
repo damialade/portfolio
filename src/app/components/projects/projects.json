@@ -6,7 +6,7 @@
     "titleLong": "DevLinkShare - Unified Developer Profile Hub",
     "tools": ["HTML", "TailwindCSS", "NextJS", "Firebase"],
     "githubLink": "https://github.com/damialade/devlink",
-    "webLink": "https://devlink-92stq9258-damialade.vercel.app",
+    "webLink": "https://devlinkshare.vercel.app",
     "description": "Devlink app is a cutting-edge web application designed to simplify and streamline the way developers showcase their online presence. This innovative platform allows developers to consolidate their various professional profiles and development-related links into a single, easily shareable URL.",
     "screenshot1": "/images/linkshare1.png",
     "screenshot2": "/images/linkshare2.jpg",
@@ -116,6 +116,6 @@
     "screenshot1": null,
     "screenshot2": null,
     "screenshot3": null,
-    "extras": null
+    "extras": "Allow for the app to know your location on every visit"
   }
 ]
