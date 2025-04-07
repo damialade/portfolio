@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="navbar-logo">DamiAlade</div>
       <div className="navbar-icons">
         <Link
-          href="mailto:tiannah1989@gmail.com"
+          href="mailto:damialade96@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
