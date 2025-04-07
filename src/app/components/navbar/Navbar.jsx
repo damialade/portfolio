@@ -34,7 +34,7 @@ const Navbar = () => {
           <FaLinkedinIn />
         </Link>
         <Link
-          href="https://drive.google.com/file/d/1FskMPHDJnvcGWLm25GzMTrTl9P30ZVD5/view?usp=sharing"
+          href="https://drive.google.com/file/d/1rP3K6RHrksb3wa7Fs3QsoKCGlIuMgYBM/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
